@@ -1,0 +1,7 @@
+AuthorizedKeysFile .ssh/authorized_keys
+AllowTcpForwarding all
+# Enabling GatewayPorts will instruct sshd to allow remote port forwardings to bind to a non-loopback address https://stackoverflow.com/a/23782581/20085654
+GatewayPorts yes
+X11Forwarding no
+Subsystem	sftp internal-sftp
+PasswordAuthentication no
